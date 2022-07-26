@@ -1,0 +1,24 @@
+/*contacto*/ 
+form {
+    padding: 7rem 20rem 4rem 20rem;
+
+    label {
+        @include fonts(1em, 600, "Poppins");
+        color: map-get($colors, $key: secondary);
+    }
+
+    textarea {
+        height: 10em;
+    }
+
+    .btn {
+        background-color: map-get($colors, $key: base);
+        border-color: map-get($colors, $key: primary);
+        margin: 0em 15em;
+    }
+
+    .btn:hover {
+        background-color: map-get($colors, $key: primary);
+        border-color: map-get($colors, $key: primary);
+    }
+}

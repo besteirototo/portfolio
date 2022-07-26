@@ -1,0 +1,28 @@
+/*header*/ 
+.navbar {
+    padding: 2em 2.5em;
+
+    picture {
+        width: 15em;
+        height: 3em;
+    }
+
+    ul {
+        gap: 2em;
+
+        a {
+            @include fonts(1.1em, 600, "Montserrat");
+            color: map-get($colors, $key: fonts);
+            border-bottom: solid 3px #ffffff;
+            transition: border-color 0.8s;
+        }
+
+        a:hover {
+            border-color: map-get($colors, $key: tertiary);
+        }
+
+        .tone {
+            border-color: map-get($colors, $key: tertiary);
+        }
+    }
+}

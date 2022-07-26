@@ -1,0 +1,128 @@
+/*main*/ 
+main {
+    .main {
+        padding: 0em 8rem;
+
+        h1 {
+            @include fonts(3em, 700, "Poppins");
+            color: map-get($colors, $key: fonts);
+
+            span {
+                color: map-get($colors, $key: secondary);
+            }
+        }
+    }
+
+    .guarda {
+        background-image: url(../img/patron.svg);
+        height: 4em;
+        width: 100%;
+    }
+
+    .h2 {
+        @include fonts(1.9em, 600, "Poppins");
+        color: map-get($colors, $key: secondary);
+        padding: 3rem 0rem;
+        position: relative;
+    }
+
+    .h2::after {
+        content: "";
+        position: absolute;
+        top: 51%;
+        left: 104%;
+        width: 1.5em;
+        height: 3px;
+        background-color: map-get($colors, $key: primary);
+    }
+
+    .h2::before {
+        content: "";
+        position: absolute;
+        top: 51%;
+        left: -37%;
+        width: 1.5em;
+        height: 3px;
+        background-color: map-get($colors, $key: primary);
+    }
+
+    h2 {
+        @include fonts(1.9em, 600, "Poppins");
+        color: map-get($colors, $key: secondary);
+        padding: 3rem 0rem;
+        position: relative;
+    }
+
+    p {
+        @include fonts(1em, 500, "Montserrat");
+        color: map-get($colors, $key: fonts);
+        margin-right: 4em;
+    }
+
+    .about {
+        margin: 2em 0em;
+
+        .btn {
+            background-color: map-get($colors, $key: base);
+            border-color: map-get($colors, $key: primary);
+        }
+
+        .btn:hover {
+            background-color: map-get($colors, $key: primary);
+            border-color: map-get($colors, $key: primary);
+        }
+    }
+
+    .foto {
+        height: 30em;
+        width: 22em;
+        border-radius: 2em;
+        transition: transform 2s;
+    }
+
+    .foto:hover {
+        transform: scale(1.1);
+    }
+
+    .icons {
+        padding: 2em 2em;
+    }
+
+    i {
+        img {
+            height: 4em;
+            width: 4em;
+        }
+    }
+
+    #brazo__izq {
+        animation: subir linear 1.2s infinite alternate ;
+        transform-origin: bottom;
+        transform-box: fill-box;
+    }
+    
+    @keyframes subir {
+        from {
+          transform: translateY(0%) rotateZ(-0deg) ;
+        }
+        to {
+          transform: translateY(-17%) rotateZ(4deg) ;
+        }
+    }
+    
+    #brazo__der {
+        animation: bajar linear 1.2s infinite alternate ;
+        transform-origin: top;
+        transform-box: fill-box;
+    }
+    
+    @keyframes bajar {
+        from {
+          transform: translateY(0%) rotateZ(-0deg) ;
+        }
+        to {
+          transform: translateY(20%) rotateZ(-7deg) ;
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+/*footer*/ 
+footer {
+    padding-top: 3rem;
+
+    .redes {
+        text-align: center;
+
+        a {
+            svg {
+                height: 2em;
+                width: 2em;
+
+                path:hover {
+                    fill: map-get($colors, $key: primary);
+                }
+            }
+        }
+
+        p {
+            @include fonts(1em, 600, "Poppins");
+            color: map-get($colors, $key: fonts);
+            padding-top: 0.5em;
+        }
+    }
+
+    .guarda {
+        background-image: url(../img/patron.svg);
+        height: 3em;
+        width: 100%;
+    }
+}
