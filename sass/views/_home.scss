@@ -1,0 +1,194 @@
+/*home*/ 
+@media screen and (max-width: 1300px) {
+    main {
+        #animation {
+            width: 30em;
+            height: 30em;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        .main {
+            padding: 0em 4em;
+
+            #animation {
+                width: 23em;
+                height: 23em;
+            }
+    
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        .h2 {
+            font-size: 1.6em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        .foto {
+            height: 26em;
+            width: 19em;
+        }
+
+        i {
+            img {
+                height: 3em;
+                width: 3em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        .main {
+            padding: 0em 2em;
+
+            #animation {
+                width: 18em;
+                height: 18em;
+            }
+    
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        .guarda {
+            height: 3em;
+        }
+
+        .h2 {
+            font-size: 1.4em;
+        }
+
+        h2 {
+            font-size: 1.4em;
+        }
+
+        .foto {
+            height: 22em;
+            width: 15em;
+        }
+
+        i {
+            img {
+                height: 2.5em;
+                width: 2.5em;
+            }
+        }
+
+        .about {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 1.5em 2em;
+
+        picture {
+            width: 13em;
+            height: 2.9em;
+        }
+
+        ul {
+            a {
+                font-size: 1em;
+            }
+        }
+    }
+    
+    main {
+        .main {
+            flex-direction: column;
+            padding-top: 2em;
+        }
+
+        .guarda {
+            height: 2.5em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        .h2 {
+            font-size: 1.2em;
+            padding: 2rem 0rem;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            padding: 2rem 0rem;
+        }
+
+        .foto {
+            height: 18em;
+            width: 13em;
+        }
+    }
+
+    footer {
+        padding-top: 2rem;
+
+        .redes {
+            a {
+                svg {
+                    height: 1.5em;
+                    width: 1.5em;
+                }
+            }
+        }
+
+        .guarda {
+            height: 2.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1em 1.5em;
+        gap: 0.7em;
+    }
+    
+    main  {
+        .guarda {
+            height: 2.2em;
+        }
+
+        h2 {
+            padding: 1.5rem 0rem;
+        }
+
+        p {
+            text-align: center;
+            margin-right: 0em;
+            padding-top: 2em;
+        }
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        
+        article {
+            align-items: center !important;
+        }
+    }
+
+    footer {
+        .guarda {
+            height: 2.2em;
+        }
+    }
+}
